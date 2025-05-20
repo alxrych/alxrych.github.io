@@ -1,0 +1,5 @@
+title: "ALXRYCH"
+description: "Abstract artist"
+theme: jekyll-theme-minimal # Opcional (elige un tema de GitHub)
+plugins:
+  - jekyll-feed
