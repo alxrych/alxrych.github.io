@@ -318,68 +318,15 @@
                     <div class="contact-form-area">
                             <div class="contact-form">
         <h2>Contacto</h2>
-        <form id="myForm" action="https://formspree.io/f/mjvnlwya" method="POST">
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="subject">Asunto:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            
-            <button type="submit">Enviar</button>
+        <form id="myForm" action="" method="POST">
+        I invite you to explore the delicate world of watercolor with me. Whether you're drawn to a particular piece, envision a custom commission, or simply wish to say hi - I'd love to hear from you.
+        My e-mail is alxrych@gmail.com
+        Your messages are always cherished. I typically respond within 1-2 business days.
         </form>
-        <div id="status" class="status-message"></div>
+      
     </div>
 
-    <script>
-        const form = document.getElementById('myForm');
-        const status = document.getElementById('status');
-        
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Mostrar estado de envío
-            status.textContent = 'Enviando mensaje...';
-            status.className = 'status-message';
-            status.style.display = 'block';
-            
-            // Enviar formulario
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    status.textContent = '¡Mensaje enviado con éxito!';
-                    status.className = 'status-message success';
-                    form.reset();
-                } else {
-                    throw new Error('Error en el servidor');
-                }
-            })
-            .catch(error => {
-                status.textContent = 'Hubo un error al enviar el mensaje. Por favor intenta de nuevo.';
-                status.className = 'status-message error';
-            });
-        });
-    </script>
-                    </div>
+   </div>
                 </div>
             </div>
         </div>
