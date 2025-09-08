@@ -91,30 +91,33 @@
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
             <p>Original paintings</p>
-            <h2>WORKS</h2>
+            <h2>AVAILABLE WORKS</h2>
            </div>
     </section>
   
         
   <!-- Contenedor centrado con margen -->
   <div align="center" style="margin: 2cm;">
-    <img id="slideshow" src="https://picsum.photos/id/1015/600/400" width="600" height="400">
+    <img id="slideshow" src="img/bg-img/b1.jpg" width="800" height="600"><br>
+    <p id="descripcion">'Montañas al amanecer' - Watercolour on paper (21 x 29.7 cm)</p>
   </div>
 
   <script>
     // Lista de imágenes
     const imagenes = [
-      "https://picsum.photos/id/1015/600/400",
-      "https://picsum.photos/id/1016/600/400",
-      "https://picsum.photos/id/1018/600/400"
+     { src: "img/bg-img/b1.jpg", texto: "'Título 1' - Watercolour on paper (21 x 29.7 cm)" },
+     { src: "img/bg-img/b2.jpg", texto: "'Título 2' - Watercolour on paper (21 x 29.7 cm)" },
+     { src: "img/bg-img/b3.jpg", texto: "'Título 3' - Watercolour on paper (21 x 29.7 cm)" }
     ];
 
     let indice = 0;
     const img = document.getElementById("slideshow");
+    const descripcion = document.getElementById("descripcion");
 
     function cambiarImagen() {
       indice = (indice + 1) % imagenes.length;
-      img.src = imagenes[indice];
+      img.src = imagenes[indice].src;
+      descripcion.textContent = imagenes[indice].texto;
     }
 
     // Cambia cada 4 segundos
@@ -122,9 +125,9 @@
   </script>
    
            
-                <h4 align=center>Nature is not a place to visit. It is a feeling to carry</h4>
+  <h5 align=center>Nature is not a place to visit. It is a feeling to carry</h5>
             
-          </div>
+  </div>
 
 
     </section>
