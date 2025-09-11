@@ -94,199 +94,114 @@
             <br>
            </div>
     </section>
+         
   
-        
-   <div class="row">
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .item {
+      text-align: center;
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .descripcion {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #444;
+    }
 
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b1.jpg" alt="abstract watercolour painting">                                       
-                                       
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Mistwalker</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b2.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Chaotic</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b3.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Fields</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b4.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Glimpse</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>  
-                    </div>
-                </div>
-            
-               <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b5.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Komorebi</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                   <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b6.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Sun is shinning somewhere</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .galeria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .galeria {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 
 
-            </div>
+  <div class="galeria">
+    <div class="item">
+      <img src="img/bg-img/b12.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>In my mind</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b11.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Green dream</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b3.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Fields</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b4.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Glimpse</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+     <div class="item">
+      <img src="img/bg-img/b1.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Mistwalker</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b2.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Chaotic</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b5.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Komorebi</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b9.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Paradise</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+     <div class="item">
+      <img src="img/bg-img/b6.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Sun is shinning somewhere</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b8.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Reservoir</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b7.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>After the storm</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    <div class="item">
+      <img src="img/bg-img/b10.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Healing</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+     <div class="item">
+      <img src="img/bg-img/b13.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>On the other side</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+     <div class="item">
+      <img src="img/bg-img/b14.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Rainforest</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+     <div class="item">
+      <img src="img/bg-img/b15.jpg" alt="Watercolour on paper">
+      <div class="descripcion"><b>Tetakawi</b> - Watercolour on paper (21 x 29.7cm)</div>
+    </div>
+    
+    
+  </div>
+                         
 
-
-
-          <div class="row">
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b7.jpg" alt="abstract watercolour painting">                                       
-                                       
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>After the storm</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="200ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b8.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Reservoir</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="300ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b9.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Paradise</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Album Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b10.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Healing</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>  
-                    </div>
-                </div>
-            
-               <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b11.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>Green dream</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-                   <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-album-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="album-thumb">
-                            <img src="img/bg-img/b12.jpg" alt="abstract watercolour painting">
-                        </div>
-                        <div class="album-info">
-                            <a href="works.html">
-                                <h5>In my mind</h5>
-                            </a>
-                            <p>Watercolour on paper 21 x 29.7cm</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-   
+   <br>
            
   <h5 align=center>Nature is not a place to visit. It is a feeling to carry</h5>
             
