@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
     color: var(--color-dark);
     background-color: var(--color-light);
     line-height: 1.6;
@@ -27,18 +27,18 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
     margin-bottom: var(--spacing-sm);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 2px;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     position: relative;
     display: inline-block;
     margin-bottom: var(--spacing-md);
@@ -95,7 +95,7 @@ header {
 }
 
 .logo {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Manrope', serif;
     font-size: 1.8rem;
     font-weight: 300;
     color: var(--color-primary);
@@ -398,7 +398,7 @@ nav a:hover::after {
     padding: var(--spacing-xs);
     border: 1px solid #ddd;
     border-radius: var(--border-radius);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     background-color: transparent;
     transition: border-color 0.3s ease;
@@ -442,7 +442,7 @@ footer {
 }
 
 .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Manrope', serif;
     font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
 }

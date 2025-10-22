@@ -12,8 +12,8 @@
 	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Abstract watercolor artist offering handmade eco-friendly art. Buy original recycled paper paintings.">
-    <title>ALXRYCH | Original Watercolor Paintings</title>
+	<meta name="description" content="Abstract watercolour artist offering handmade eco-friendly art. Buy original recycled paper paintings.">
+    <title>ALXRYCH | Original watercolour paintings</title>
 	<link rel="icon" href="img/favicon.ico">
 	<meta name="google-site-verification" content="oDVE64R4YU_OpSm53bilDb94YpTDA71cI2WmYy254bE" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">ALXRYCH</div>
+            <div class="logo">alxrych.</div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -36,7 +36,7 @@
         </div>			
     </header>
 
-   <img src="img/landing.png" alt="watercolor painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;">
+   <img src="img/landing.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;">
 	      	
   
 
@@ -44,12 +44,12 @@
     <section class="section about">
         <div class="container">
             <h1>Sustainable art with recycled paper</h1>
-			<h2>Unique works created with 100% natural and recycled materials</h2>
+			<h2>Unique works created with natural and recycled materials</h2>
             <div class="about-content">
 				 <img src="img/gallery.png" alt="watercolor painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;">
                 <div class="about-text">
-                    <p>Each piece is crafted on handmade recycled paper, meticulously created from reclaimed paper and cardboard remnants without any chemical processing. The paper itself tells a story of renewal and transformation, providing a unique textured backdrop for the artworks.</p>
-                    <p>The watercolor paintings are original and unique, applied with chemical-free paints made from natural pigments. These organic materials interact with the recycled paper in subtle ways, creating soft textures and gentle color variations that cannot be replicated with synthetic alternatives.</p>
+                    <p>Each piece is crafted on handmade recycled paper, meticulously created from reclaimed paper and cardboard remnants without any chemical processing. The paper itself tells a story of renewal and 						transformation, providing a unique textured backdrop for the artworks.</p>
+                    <p>The watercolor paintings are original and unique, applied with chemical-free paints made from natural pigments. These organic materials interact with the recycled paper in subtle ways, creating 						soft textures and gentle color variations that cannot be replicated with synthetic alternatives.</p>
                     <p> 
 					<br><b>Process</b><br><br>
 					<b>· Collection:</b> gathering paper and cardboard scraps for recycling. <br>
@@ -59,7 +59,7 @@
 					</p>
                 </div>
                 <div class="about-image">
-                    <img src="img/recycled.png" alt="watercolor painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;">
+                    <img src="img/recycled.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;">
 					 
                 </div>
             </div>
@@ -68,294 +68,87 @@
 	
 	
  <!-- Gallery Section -->
-
-  <style>
-    :root {
-      --gap: 12px;
-      --caption-size: 0.9rem;
-      --max-thumb-height: 220px;
-    }
   
-    .table-responsive {
-      width: 100%;
-      overflow-x: auto;
-    }
-
-    table.image-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: transparent;
-      table-layout: fixed;
-    }
-
-    table.image-table td {
-      padding: var(--gap);
-      vertical-align: top;
-      background: transparent;
-      border: 0;
-    }
-
-    figure.thumb {
-      margin: 0;
-      text-align: center;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    figure.thumb img {
-      display: block;
-      width: 100%;
-      height: var(--max-thumb-height);
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-      transition: transform .22s ease, box-shadow .22s ease, opacity .18s ease;
-    }
-
-    figure.thumb:hover img,
-    figure.thumb:focus img {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    }
-
-    figcaption {
-      margin-top: 8px;
-      font-size: var(--caption-size);
-      color: rgba(0, 0, 0, 0.75);
-    }
-
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      z-index: 9999;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .lightbox.open {
-      display: flex;
-    }
-
-    .lightbox-content {
-      position: relative;
-      max-width: 1200px;
-      max-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .lightbox img {
-      max-width: 100%;
-      max-height: calc(90vh - 60px);
-      border-radius: 8px;
-      object-fit: contain;
-    }
-
-    .lightbox-caption {
-      margin-top: 10px;
-      color: #fff;
-      font-size: 0.95rem;
-      text-align: center;
-      padding: 6px 12px;
-      background: rgba(0, 0, 0, 0.35);
-      border-radius: 6px;
-      backdrop-filter: blur(6px);
-    }
-
-    .lightbox-close,
-    .lightbox-prev,
-    .lightbox-next {
-      position: absolute;
-      background: transparent;
-      border: 0;
-      color: #fff;
-      font-size: 32px;
-      line-height: 1;
-      cursor: pointer;
-      padding: 6px 10px;
-      border-radius: 6px;
-    }
-
-    .lightbox-close { top: 18px; right: 18px; }
-    .lightbox-prev { left: 20px; top: 50%; transform: translateY(-50%); }
-    .lightbox-next { right: 20px; top: 50%; transform: translateY(-50%); }
-
-    @media (max-width: 800px) {
-      :root { --max-thumb-height: 160px; }
-    }
-
-    @media (max-width: 520px) {
-      :root { --max-thumb-height: 120px; }
-    }
-  </style>
- 
 	 <section id="gallery" class="gallery">
-		 <h3 style="text-align:center; width:100%; font-size:clamp(1.5rem, 4vw, 3rem);">Available</h3>
-    <table class="image-table" role="grid" aria-label="Gallery">
-      <tbody>
-        <tr>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/rainforest.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/rainforestmini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Rainforest</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/lightchaser.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/lightchasermini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Lightchaser</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/greendream.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/greendreammini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Greendream</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/fields.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/fieldsmini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Fields</figcaption>
-            </figure>
-          </td>
-        </tr>
-		   <tr>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/glimpse.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/glimpsemini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Glimpse</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/komorebi.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/komorebimini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Komorebi</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/mistwalker.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/mistwalkermini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Mistwalker</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/paradise.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/paradisemini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Paradise</figcaption>
-            </figure>
-          </td>
-        </tr>
-		    <tr>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/reservoir.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/reservoirmini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Reservoir</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/somewhere.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/somewheremini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Sun is shining somewhere</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/storm.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/stormmini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>After the storm</figcaption>
-            </figure>
-          </td>
-          <td>
-            <figure class="thumb" tabindex="0" data-full="img/healing.png" data-caption="watercolor on paper (21 x 29.7cm)">
-              <img src="img/healingmini.png" alt="watercolor painting on recycled paper by ALXRYCH" loading="lazy">
-              <figcaption>Healing</figcaption>
-            </figure>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+		<div class="container">
+		 <h1>Available works</h1>
+			
+		<figure>
+  			<img src="img/1.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Reverie' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>		
+			<br>
+			<br>
+		<figure>
+  			<img src="img/2.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Mistwalker' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>	
+			<br>
+			<br>
+		<figure>
+  			<img src="img/3.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Fields' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/4.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Lichtchaser' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/5.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'On the other side' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/6.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Green dream' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/7.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Healing' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/8.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Komorebi' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/9.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'After the storm' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/10.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Paradise' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/11.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Reservoir' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+			<br>
+			<br>
+			<figure>
+  			<img src="img/12.png" alt="watercolour painting on recycled paper by ALXRYCH" style="width: 100%; height: auto; max-width: 100%;"/>
+  			<figcaption>'Rainforest' - watercolour on paper (21 x 29.7 cm)</figcaption>
+		</figure>
+    	 
+	  </div>
+  	</section>
 
-  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" id="lightbox">
-    <button class="lightbox-close" aria-label="Close">✕</button>
-    <button class="lightbox-prev" aria-label="Previous">❮</button>
-    <button class="lightbox-next" aria-label="Next">❯</button>
-    <div class="lightbox-content">
-      <img alt="watercolor painting on recycled paper by ALXRYCH" id="lightbox-img">
-      <div class="lightbox-caption" id="lightbox-caption"></div>
-    </div>
-  </div>
-
-  <script>
-    (function(){
-      const thumbs = Array.from(document.querySelectorAll('figure.thumb'));
-      const lightbox = document.getElementById('lightbox');
-      const lbImg = document.getElementById('lightbox-img');
-      const lbCaption = document.getElementById('lightbox-caption');
-      const closeBtn = document.querySelector('.lightbox-close');
-      const prevBtn = document.querySelector('.lightbox-prev');
-      const nextBtn = document.querySelector('.lightbox-next');
-      let currentIndex = 0;
-
-      function openLightbox(index){
-        const item = thumbs[index];
-        if(!item) return;
-        currentIndex = index;
-        lbImg.src = item.dataset.full;
-        lbImg.alt = item.querySelector('img').alt;
-        lbCaption.textContent = item.dataset.caption || '';
-        lightbox.classList.add('open');
-        lightbox.setAttribute('aria-hidden','false');
-      }
-
-      function closeLightbox(){
-        lightbox.classList.remove('open');
-        lightbox.setAttribute('aria-hidden','true');
-        lbImg.src = '';
-      }
-
-      function showPrev(){
-        currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
-        openLightbox(currentIndex);
-      }
-
-      function showNext(){
-        currentIndex = (currentIndex + 1) % thumbs.length;
-        openLightbox(currentIndex);
-      }
-
-      thumbs.forEach((t, i) => {
-        t.addEventListener('click', ()=> openLightbox(i));
-        t.addEventListener('keydown', e => {
-          if(e.key === 'Enter' || e.key === ' '){
-            e.preventDefault();
-            openLightbox(i);
-          }
-        });
-      });
-
-      closeBtn.addEventListener('click', closeLightbox);
-      prevBtn.addEventListener('click', showPrev);
-      nextBtn.addEventListener('click', showNext);
-
-      document.addEventListener('keydown', e => {
-        if(!lightbox.classList.contains('open')) return;
-        if(e.key === 'Escape') closeLightbox();
-        if(e.key === 'ArrowLeft') showPrev();
-        if(e.key === 'ArrowRight') showNext();
-      });
-
-      lightbox.addEventListener('click', e => {
-        if(e.target === lightbox) closeLightbox();
-      });
-    })();
-  </script>
-
-
-    <!-- Contact Section -->
+	
+	<!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
             <h2>Contact</h2>
@@ -364,7 +157,7 @@
                     <h3>I look forward to getting in touch with you.</h3>
 					<p>ALXRYCH is a self-taught artist based in northern Spain, creating abstract works on recycled paper that are inspired by the beauty of nature and the emotions stirred by its landscapes.
 					Through textures, colours, and fluid forms, his paintings aim to capture the feelings that arise when observing forests, rivers, mountains, and the rugged northern coastline.</p>
-					<p>Each piece invites the viewer to experience the landscape in a personal and emotional way, reflecting the moods, rhythms, and subtle patterns of the natural world. By blending observation with abstraction transforms everyday scenes into evocative expressions of place and feeling.</p>
+					<p>Each piece invites the viewer to experience the landscape in a personal and emotional way, reflecting the moods, rhythms, and subtle patterns of the natural world. By blending observation with 					abstraction transforms everyday scenes into evocative expressions of place and feeling.</p>
                     <div class="contact-details">
                         <p>📍 Based in North Spain</p>
                         <p>✉️ Email: alxrych@gmail.com</p>
@@ -376,7 +169,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <img src="img/author.jpg" alt="watercolor painting on recycled paper by ALXRYCH" style="width: 70%; height: auto; max-width: 70%;">
+                    <img src="img/author.jpg" alt="contact form">
                 </div>
             </div>
         </div>
