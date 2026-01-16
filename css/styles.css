@@ -1,7 +1,5 @@
 /* =================================================================== 
- * Augustine Main Stylesheet
  * Template Ver. 1.0.0
- * 03-16-2022
  * ------------------------------------------------------------------
  *
  * TOC:
@@ -171,13 +169,13 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #CFE6E8;
+    --color-preloader-bg           : #5A6E73;
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
      */
-    --color-body                   : #CFE6E8;
+    --color-body                   : #5A6E73;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
