@@ -169,13 +169,13 @@
 
     /* preloader
      */
-    --color-preloader-bg           : #5A6E73;
+    --color-preloader-bg           : #6B8E23;
     --color-loader                 : var(--color-text-dark);
     --color-loader-light           : var(--color-1-lighter);
 
     /* others
      */
-    --color-body                   : #5A6E73;
+    --color-body                   : #6B8E23;
     --color-border                 : rgba(0, 0, 0, .08);
     --border-radius                : 3px;
 }
